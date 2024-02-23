@@ -569,6 +569,10 @@ p .info {
 }
 .dots label:hover {background: #fff;}
 
+.m2 {
+    opacity: 0.5;
+}
+
 #img1:checked ~ .m1 {
     margin-left: 0px;
     border: 5px solid snow;

@@ -732,3 +732,10 @@ p .info {
 #im1:checked ~ .m4 {
     opacity: 0.5; 
 }
+
+#im2:checked ~ .m1,
+#im3:checked ~ .m1,
+#im4:checked ~ .m1, 
+#im5:checked ~ .m1 {
+    border: 0px solid rgba(255, 0, 0, 0.452);
+}

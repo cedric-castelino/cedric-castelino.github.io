@@ -1,0 +1,714 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    min-height: 100vh;
+    background-color: #121316;
+}
+
+h1 {
+    font-size: 50px;
+    color: #d0d0d0;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+h1:hover {
+    font-size: 51px;
+    color: #a373fb;
+}
+
+h2 {
+    padding-top: 10px;
+    font-size: 30px;
+    color: #d0d0d0;
+}
+
+p {
+    font: 10.5em 'Verdana';
+    padding-top: 50px;
+    font-size: 25px;
+    color: #9c9c9d;
+    line-height: 1.5;
+    transition: font-size 0.3s, color 0.3s;
+    white-space: nowrap; 
+}
+
+p:hover {
+    font-size: 25.5px;
+}
+
+nav {
+    background-color: #121316;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 129%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 150px;
+    border-bottom: 2px solid snow;
+    z-index: 9999;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 25em;
+    list-style: none;
+}
+
+nav ul a:hover{
+    background-color: snow;
+    color: #121316;
+    border-bottom: 2px solid black;
+    font-size: 25px;
+    box-shadow: 0 0 35px snow;
+    
+}
+
+nav ul a{
+    color: snow;
+    padding: 46px 65px;
+    transition: 0.3s ease;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav > a{
+    font-size: 32px;
+    color: snow;
+    text-decoration: none;
+}
+
+section {
+    color: snow;
+    padding: 9%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 90%;
+  font-weight: 800;
+}
+
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 800px;
+    height: 47px;
+    position: relative;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: snow;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: snow;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: snow;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: snow;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: snow;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+p:hover .UNSW {
+    color: #ffdc00;
+    text-shadow: 0 0 3px black
+}
+
+p:hover .degree {
+    color: #a373fb;
+    text-shadow: 0 0 3px black                                                                      
+}
+
+p:hover .cert {
+    color: #248aff;
+    text-shadow: 0 0 3px black
+}
+
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-size: 40px;
+    color: #d0d0d0;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+.container {
+    position: relative;
+    width: 1500px;
+    height: 300px;
+    margin: 20px;
+    background: #121316;
+}
+
+.container .box {
+    position: relative;
+    width: calc(300px - 30px);
+    height: calc(300px - 30px);
+    background: #191a1d;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #202124;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container .box:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container .box .icon .fa-brands{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    transition: 0.5s;
+    color: #797a7c;
+}
+
+.container .box:hover .icon .fa-brands{
+    font-size: 50px;
+    color: #FFD43B;
+
+}
+
+.container .box:hover .icon .fa-brands.fs-js{
+    font-size: 50px;
+    color: #ffcb11;
+
+}
+
+.container .box:hover .icon .fa-brands.fa-java{
+    font-size: 50px;
+    color: #cb2d2e;
+
+}
+
+.container .box:hover .icon .fa-brands.fa-swift{
+    font-size: 50px;
+    color: #ff5034;
+
+}
+
+.container .box:hover .icon .fa-brands.fa-html5{
+    font-size: 50px;
+    color: #8acf17;
+
+}
+
+.container .box:hover .icon .fa-brands.fa-css3-alt{
+    font-size: 50px;
+    color: #9123db;
+
+}
+
+.container .box:hover .icon .fa-brands.fa-linkedin{
+    font-size: 50px;
+    color: #0a66c2;
+
+}
+
+.container .box:hover .icon .fa-brands.fa-square-instagram{
+    font-size: 50px;
+    color: #da3d95;
+
+}
+
+.container .box:hover .icon .fa-brands.fa-github{
+    font-size: 50px;
+    color: #010409;
+
+}
+
+.container .box .icon .fa-solid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    transition: 0.5s;
+    color: #797a7c;
+}
+
+.container .box:hover .icon .fa-solid{
+    font-size: 50px;
+    color: #00589d;
+
+}
+
+.container .box:hover .icon .fa-solid.fa-gears{
+    font-size: 50px;
+    color: #0ba886;
+
+}
+
+.container .box .icon .fa-regular{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    transition: 0.5s;
+    color: #797a7c;
+}
+
+.container .box:hover .icon .fa-regular.fa-file{
+    font-size: 50px;
+    color: snow;
+
+}
+
+
+.container .box:hover {
+    box-shadow: 0 0 3px snow;
+}
+
+.container .box .content{
+    width: 100%;
+    position: absolute;
+    font-size: 35px;
+    text-align: center;
+    top: 120px;
+    box-sizing: border-box;
+    font: 'Verdana';
+}
+
+h5 {
+    font: 10.5em 'Verdana';
+    padding-top: 20px;
+    font-size: 25px;
+    color: #9c9c9d;
+}
+
+.email {
+    background: #202124;
+    width: 350px;
+    height: 65px;
+    padding: 10px;
+    font: 'Verdana';
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.email p {
+    padding-top: 2px;
+}
+
+.email:hover {
+    box-shadow: 0 0 3px snow;
+}
+
+.click-me {
+    position: absolute;
+    bottom: -50px; 
+    font-size: 20px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    }
+
+    table {
+        margin-left: 0px;
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    
+    th,
+    td {
+        padding: 15px;
+        background-color: rgba(32,33,36,0.2);;
+        color: #fff;
+    }
+    
+    th {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    thead {
+        th {
+            background-color: #191a1d;
+        }
+    }
+    
+    tbody {
+        tr {
+            &:hover {
+                background-color: rgba(255,255,255,0.3);
+            }
+        }
+        td {
+            position: relative;
+            &:hover {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: -9999px;
+                    bottom: -9999px;
+                    background-color: rgba(255,255,255,0.2);
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+tbody tr td .language {
+    margin-left: 93%;
+    font-size: 15px;
+}
+
+tbody tr td .language2 {
+    margin-left: 96%;
+    font-size: 15px;
+}
+
+tbody tr td .language3 {
+    margin-left: 93%;
+    font-size: 15px;
+}
+
+tbody tr td .language4 {
+    margin-left: 95%;
+    font-size: 15px;
+}
+
+tbody tr td .language5 {
+    margin-left: 94%;
+    font-size: 15px;
+}
+
+p .info {
+    color: snow;
+}
+
+.giticon {
+    font-size: 30px;
+}
+
+.giticon:hover {
+    color: lightblue;
+}
+
+.images img {
+    margin-left: 25%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px snow;
+}
+
+.images2 img {
+    margin-left: 25%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px snow;
+}
+
+.images2:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px snow;
+}
+
+.images:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px snow;
+}
+
+.box {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.container {
+    display: flex;
+}
+
+.images3 {
+    flex: 1; 
+    margin-left: 100px;
+}
+
+.second-image {
+    margin-top: 50px; 
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px snow;
+}
+.first-image {
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px snow;
+}
+.images4 img{
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px snow;
+    margin-right: 100px;
+}
+
+.images5 img{
+    margin-top: 250px; 
+    margin-left: 140px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px snow;
+}
+
+.images5:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px snow;
+}
+
+.first-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px snow;
+}
+
+.second-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px snow;
+}
+
+.images4:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px snow;
+}
+
+.slider {
+    margin-left: 300px;
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+.images6 {
+    display: flex;
+    width: 100%;
+}
+.images6 img {
+    height: 500px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images6 input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+
+#img1:checked ~ .m1 {
+    margin-left: 0px;
+    border: 5px solid snow;
+    opacity: 1;
+    z-index: 1;
+}
+
+#img1:checked ~ .m2,
+#img1:checked ~ .m3,
+#img1:checked ~ .m4, 
+#img1:checked ~ .m5 {
+    opacity: 0.5; 
+}
+
+#img2:checked ~ .m2 {
+    margin-left: -720px;
+    border: 5px solid snow;
+    opacity: 1;
+    z-index: 1;
+}
+
+#img2:checked ~ .m1,
+#img2:checked ~ .m3,
+#img2:checked ~ .m4, 
+#img1:checked ~ .m5 {
+    opacity: 0.5; 
+}
+
+#img3:checked ~ .m3 {
+    margin-left: -1520px;
+    border: 5px solid snow;
+    opacity: 1;
+    z-index: 1;
+}
+
+#img3:checked ~ .m2,
+#img3:checked ~ .m1,
+#img3:checked ~ .m4, 
+#img1:checked ~ .m5 {
+    opacity: 0.5; 
+}
+
+#img4:checked ~ .m4 {
+    margin-left: -2320px;
+    border: 5px solid snow;
+    opacity: 1;
+    z-index: 1;
+}
+
+#img4:checked ~ .m2,
+#img4:checked ~ .m3,
+#img4:checked ~ .m1, 
+#img1:checked ~ .m5 {
+    opacity: 0.5; 
+}
+
+#img5:checked ~ .m5 {
+    margin-left: -3200px;
+    border: 5px solid snow;
+    opacity: 1;
+    z-index: 1;
+}
+
+#img5:checked ~ .m2,
+#img5:checked ~ .m3,
+#img5:checked ~ .m1, 
+#img1:checked ~ .m4 {
+    opacity: 0.5; 
+}
+
+
+
+
+
+#im1:checked ~ .m1 {
+    margin-left: 0px;
+    border: 5px solid black;
+    opacity: 1;
+    z-index: 1;
+}
+
+#im1:checked ~ .m2,
+#im1:checked ~ .m3,
+#im1:checked ~ .m4, 
+#im1:checked ~ .m5 {
+    opacity: 0.5; 
+}
+
+#im2:checked ~ .m2 {
+    margin-left: -885px;
+    border: 5px solid black;
+    opacity: 1;
+    z-index: 1;
+}
+
+#im2:checked ~ .m1,
+#im2:checked ~ .m3,
+#im2:checked ~ .m4, 
+#im1:checked ~ .m5 {
+    opacity: 0.5; 
+}
+
+#im3:checked ~ .m3 {
+    margin-left: -1770px;
+    border: 5px solid black;
+    opacity: 1;
+    z-index: 1;
+}
+
+#im3:checked ~ .m2,
+#im3:checked ~ .m1,
+#im3:checked ~ .m4, 
+#im1:checked ~ .m5 {
+    opacity: 0.5; 
+}
+
+#im4:checked ~ .m4 {
+    margin-left: -2600px;
+    border: 5px solid black;
+    opacity: 1;
+    z-index: 1;
+}
+
+#im4:checked ~ .m2,
+#im4:checked ~ .m3,
+#im4:checked ~ .m1, 
+#im1:checked ~ .m5 {
+    opacity: 0.5; 
+}
+
+#im5:checked ~ .m5 {
+    margin-left: -3500px;
+    border: 5px solid black;
+    opacity: 1;
+    z-index: 1;
+}
+
+#im5:checked ~ .m2,
+#im5:checked ~ .m3,
+#im5:checked ~ .m1, 
+#im1:checked ~ .m4 {
+    opacity: 0.5; 
+}

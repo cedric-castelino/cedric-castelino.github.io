@@ -573,12 +573,28 @@ p .info {
     opacity: 0.5;
 }
 
+.m1 {
+    border: 5px solid snow;
+}
+
+.images6#cyber .m1 {
+    border: 5px solid rgba(255, 0, 0, 0.452);
+}
+
 #img1:checked ~ .m1 {
     margin-left: 0px;
     border: 5px solid snow;
     opacity: 1;
     z-index: 1;
 }
+
+#img2:checked ~ .m1,
+#img3:checked ~ .m1,
+#img4:checked ~ .m1, 
+#img5:checked ~ .m1 {
+    border: 0px solid snow;
+}
+
 
 #img1:checked ~ .m2,
 #img1:checked ~ .m3,
@@ -649,7 +665,7 @@ p .info {
 
 #im1:checked ~ .m1 {
     margin-left: 0px;
-    border: 5px solid black;
+    border: 5px solid rgba(255, 0, 0, 0.452);
     opacity: 1;
     z-index: 1;
 }
@@ -663,7 +679,7 @@ p .info {
 
 #im2:checked ~ .m2 {
     margin-left: -885px;
-    border: 5px solid black;
+    border: 5px solid rgba(255, 0, 0, 0.452);
     opacity: 1;
     z-index: 1;
 }
@@ -677,7 +693,7 @@ p .info {
 
 #im3:checked ~ .m3 {
     margin-left: -1770px;
-    border: 5px solid black;
+    border: 5px solid rgba(255, 0, 0, 0.452);
     opacity: 1;
     z-index: 1;
 }
@@ -691,7 +707,7 @@ p .info {
 
 #im4:checked ~ .m4 {
     margin-left: -2600px;
-    border: 5px solid black;
+    border: 5px solid rgba(255, 0, 0, 0.452);
     opacity: 1;
     z-index: 1;
 }
@@ -705,7 +721,7 @@ p .info {
 
 #im5:checked ~ .m5 {
     margin-left: -3500px;
-    border: 5px solid black;
+    border: 5px solid rgba(255, 0, 0, 0.452);
     opacity: 1;
     z-index: 1;
 }

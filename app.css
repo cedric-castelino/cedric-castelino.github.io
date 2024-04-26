@@ -6,6 +6,28 @@
 
 }
 
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top: 70px;
+  }
+  
+.profile-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.no-top-padding {
+  padding-top: 0;
+}
+
+.profile-image:hover {
+    box-shadow: 0 0 25px snow;
+}
+
 body {
     min-height: 100vh;
     background-color: #121316;
@@ -36,6 +58,18 @@ p {
     line-height: 1.5;
     transition: font-size 0.3s, color 0.3s;
     white-space: nowrap; 
+}
+
+.degree {
+    font: 10.5em 'Verdana';
+    font-size: 25px;
+    color: #9c9c9d;
+}
+
+.cert {
+    font: 10.5em 'Verdana';
+    font-size: 25px;
+    color: #9c9c9d;
 }
 
 nav {
@@ -727,11 +761,4 @@ p .info {
 #im5:checked ~ .m1, 
 #im1:checked ~ .m4 {
     opacity: 0.5; 
-}
-
-#im2:checked ~ .m1,
-#im3:checked ~ .m1,
-#im4:checked ~ .m1, 
-#im5:checked ~ .m1 {
-    border: 0px solid rgba(255, 0, 0, 0.452);
 }
